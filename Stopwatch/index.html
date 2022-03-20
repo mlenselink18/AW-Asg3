@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <link href="../styles/stopwatch.css" rel="stylesheet" type="text/css" />
+</head>
+<header>
+    <h1>Stopwatch and Clock</h1>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Temperature/index.html">Temperatures</a></li>
+        <li><a href="../Tests/index.html">Test Scores</a></li>
+        <li><a href="../Stopwatch/index.html">Stopwatch</a></li>
+    </ul>
+</nav>
+<br>
+<body>
+    <main>
+        <div>
+            <fieldset>
+                <legend>Clock</legend>
+                <span id="clockHours"></span> : <span id="clockMinutes"></span> : <span id="clockSeconds"></span> <span id="clockMeridian"></span>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Stopwatch</legend>
+                <input type="button" value="Start" id="buttonStart">
+                <input type="button" value="Stop" id="buttonStop">
+                <input type="button" value="Reset" id="buttonReset">
+                <span id="minutes"></span> : <span id="seconds"></span> : <span id="milliseconds"></span>
+            </fieldset>
+        </div>
+        <br>
+    </main>
+    <script src="Stopwatch.js"></script>
+</body>
+</html>
